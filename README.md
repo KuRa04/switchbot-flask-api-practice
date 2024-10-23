@@ -7,7 +7,7 @@
 
 ---
 
-### 事前準備
+### 1. 事前準備
 
 #### 1.1 GitHubアカウントの作成
 1. [GitHub](https://github.com) にアクセスし、「Sign up」をクリック。
@@ -33,7 +33,38 @@
      ```bash
      wsl --install
      ```
+### 2. ITAPシステムの環境構築
 
+#### 2.1 任意のディレクトリに移動
+コマンドプロンプトまたはPowerShellで、プロジェクトを配置するディレクトリに移動します。
+例：
+```bash
+cd C:\Users\YourName\Projects
+```
+
+#### 2.2 リポジトリのクローン
+以下のコマンドで、リポジトリをクローンします。
+```bash
+git clone https://github.com/KuRa04/switchbot-flask-api-practice.git
+```
+
+#### 2.3 Visual Studio Codeでプロジェクトを開いて、拡張機能をダウンロード
+1. VisualStudioCodeを起動し、「ファイル」→「フォルダを開く」でクローンしたリポジトリのフォルダを選択してください。
+2. VisualStudioCodeの「拡張機能」を選択し、「REST Client」と検索してください。
+3. 検索欄にある「REST Client」をインストールしてください。[REST Clientのインストール方法](https://qiita.com/mgmgmogumi/items/61f0b896580d3e6db2bb)
+4. インストールしたREST Clientを反映させるためにVisualStudioCodeを再起動してください。
+
+
+#### 2.4 Dockerコンテナの起動
+VSCodeのターミナルを開き、以下のコマンドでDockerコンテナを立ち上げます。
+初回は`--build`オプションが必要です。
+```bash
+docker-compose up --build
+```
+
+#### 2.5 動作確認
+以下のURLにアクセスし、「hello flask」というテキストが表示されたら動作確認完了です。
+-  [http://localhost:8080/](http://localhost:8080/)
 ---
 
 ## 課題1: Flaskで基本的なAPIエンドポイントを作成する

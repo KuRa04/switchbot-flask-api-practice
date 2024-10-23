@@ -1,4 +1,4 @@
-# flask-switchbot-api課題
+# 課題
 ## FlaskでSwitchBotAPIを叩くAPIを実装
 
 ### 課題概要

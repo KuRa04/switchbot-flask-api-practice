@@ -1,0 +1,15 @@
+# Pythonキャッシュファイルの無視設定
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE/Editor
+.vscode/
+.http
+
+# macOS
+.DS_Store
+
+# Docker関連
+*.log
+*.pid
